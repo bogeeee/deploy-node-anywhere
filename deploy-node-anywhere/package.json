@@ -1,0 +1,31 @@
+{
+  "name": "deploy-node-anywere",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "main.js",
+  "scripts": {
+    "dev:fastbuild": "tsc --build",
+    "clean": "tsc --build --clean && rimraf dist LICENSE readme.md",
+    "dev:testArgs": "npm run dev:fastbuild && node --enable-source-maps main.js --prefix test "
+  },
+  "exports": {
+    ".": {
+      "import": "./index_esm.mjs",
+      "require": "./index.js"
+    },
+    "./Util": {
+      "default": "./Util.js"
+    }
+  },
+  "dependencies": {
+    "docker-file-parser": "=1.0.7",
+    "pem-file": "=1.0.1",
+    "@types/node": "^22.7.4",
+    "tweetnacl": "^1.0.3",
+    "tweetnacl-util": "^0.15.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.4",
+    "rimraf": "=5.0.5"
+  }
+}

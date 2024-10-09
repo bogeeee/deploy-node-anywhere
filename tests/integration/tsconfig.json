@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "declaration": false,
+    "target": "ESNext",
+    "module": "CommonJS", // For Jest. Otherwise it can't dynamicly load modules
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "strictNullChecks": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+  },
+  "exclude": ["dist", "example-app"]
+}

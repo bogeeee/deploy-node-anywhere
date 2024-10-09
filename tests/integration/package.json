@@ -1,0 +1,16 @@
+{
+  "name": "deploy-node-anywere-integration-tests",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev:fastbuild": "tsc --build",
+    "clean": "tsc --build --clean",
+    "test": "npm --prefix ../.. run  dev:fastbuild && jest --runInBand"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "ts-jest": "^29.0.3",
+    "@types/jest": "^29.2.2"
+  }
+}

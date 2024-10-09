@@ -1,0 +1,13 @@
+{
+  "name": "deploy-node-anywere-development-root",
+  "description": "Tests and build/publish scripts",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev:fastbuild": "npm --prefix deploy-node-anywhere run dev:fastbuild && npm --prefix tests/integration run dev:fastbuild",
+    "clean": "npm --prefix deploy-node-anywhere run clean",
+    "test": "npm --prefix tests/integration run test"
+  },
+  "dependencies": {
+  }
+}
