@@ -1,5 +1,7 @@
 # Deploy node anywhere
 
+**!!!!!!!!!!!!!Örly Konzept, does not work yet!!!!!!!!!!!!!!**
+
 Just one command that deploys your Node.js server app either to a...
 1) **bare metal host with Node.js** or 
 2) **host with docker** or 
